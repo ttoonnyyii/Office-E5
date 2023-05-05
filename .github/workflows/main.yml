@@ -27,11 +27,11 @@ jobs:
         java-version: 1.8
     - name: Run jar
       env:
-        CLIENT_ID: ${{ secrets.CLIENT_ID }}
-        CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
-        TENANT_GUID: ${{ secrets.TENANT_GUID }}
-        USERNAME: ${{ secrets.USERNAME }}
-        PASSWORD: ${{ secrets.PASSWORD }}
+        CLIENT_ID: ${{ 1c8c5f25-edf7-4dd3-a4c9-d10f63560305 }}
+        CLIENT_SECRET: ${{ x6N8Q~DSe5oyCkeAkbHhaIpkzG9n1WzPhAbcAaNF }}
+        TENANT_GUID: ${{ 4abe5d26-edb8-471f-888a-77c86df2ea0c }}
+        USERNAME: ${{ ruandmi@ruandmi.onmicrosoft.com }}
+        PASSWORD: ${{ Aa701018 }}
       run: |
         java -jar ./officeE5-1.0-SNAPSHOT-jar-with-dependencies.jar "$CLIENT_ID" "$USERNAME" "$PASSWORD" "$TENANT_GUID" "$CLIENT_SECRET"  >> ./run.log
         tail run.log   
